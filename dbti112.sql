@@ -27,9 +27,7 @@ primary key(codfunc));
 
 -- inserindo registros na tabela funcionarios
 
-insert into tbFuncionarios(nome,email,cpf,telCel,
-	cep,endereco,numero,bairro,cidade,estado)
-	values(nome,email,cpf,telCel,cep,endereco,numero,bairro,cidade,estado);
+insert into tbFuncionarios(nome,email,cpf,telCel,cep,endereco,numero,bairro,cidade,estado)values(nome,email,cpf,telCel,cep,endereco,numero,bairro,cidade,estado);
 
 -- alterando registros na tabela funcionarios
 
@@ -41,11 +39,11 @@ update tbFuncionarios set nome=nome,email=email,cpf=cpf,telCel=telCel,
 
 delete from tbFuncionarios where codFunc = codfunc;
 
--- pesquisando registros na tabela funciorios por codigo
+-- pesquisando registros na tabela funcionarios por codigo
 
 select * from tbFuncionarios where codFunc = codfunc;
 
--- pesquisando registros na tabela funciorios por nome
+-- pesquisando registros na tabela funcionarios por nome
 
 select * from tbFuncionarios where nome like '%nome%';
 
